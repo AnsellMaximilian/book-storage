@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: rgb(29, 20, 0);
+}
+
+
+/* BOOK FORM */
+#book-form {
+    display: none;
+    border: black 1px solid;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 30%;
+    padding: 50px 0px;
+    background-color: rgb(223, 200, 124);
+    border-radius: 25px;
+    border: 5px solid rgb(150, 106, 13);
+    color: rgb(77, 56, 11);
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+#book-form * {
+
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-weight: 670;
+}
+
+#book-form input {
+    height: 30px;
+}
+
+#book-form label, #book-form #enter-form{
+    margin-top: 20px;
+}
+
+#close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+    color: white;
+    background-color: rgb(185, 38, 38);
+    border: none;
+    cursor: pointer;
+
+}
+
+#close-form:hover {
+    background-color: rgb(156, 31, 31);
+}
+
+#form-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(185, 131, 13);
+    padding: 20px;
+    border-bottom: 5px solid rgb(150, 106, 13);;
+}
+
+#book-form #enter-form {
+    background-color: rgb(150, 106, 13);
+    border: none;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 25px;
+}
+
+#book-form #enter-form:hover {
+    background-color: rgb(116, 83, 13);
+    border: none;
+}
+
+#enter-form:active {
+    background: linear-gradient(rgb(116, 83, 13), rgb(83, 60, 11));
+}
+
+#is-read {
+    height: 30px;
+}
+/* BOOK DISPLAY */
+
+#book-display {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color:rgb(150, 106, 13); ;
+}
+
+/* BOOK CARD */
+
+.book-card {
+    border: rgb(29, 20, 0) solid 1px;
+    width: 12.5%;
+    position: relative;
+    height: 150px;
+    margin-top: 25px;
+    background-color: rgb(255, 208, 0);
+
+}
+
+.book-card span {
+    display: block;
+    text-indent: 5px;
+    margin-bottom: 2px;
+}
+
+.book-title {
+    font-weight: bold;
+    background-color: brown;
+    margin-top: 10px;
+    color: white;
+}
+
+.delete-book {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 5px;
+    right: 5px;
+    padding: 0;
+    cursor: pointer;
+    background-color: rgb(187, 28, 28);
+    outline: none;
+    border: none;
+
+}
+
+.pages {
+    font-size: smaller;
+}
+
+/* TOGGLE BUTTONS */
+.read-button {
+    background-color: rgb(20, 165, 20);
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    border: none;
+    outline: none;
+    width: 60%;
+    cursor: pointer;
+    text-align: left;
+}
+
+.not-read-button {
+    background-color: gray;
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    border: none;
+    outline: none;
+    width: 60%;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* BUTTON FOR DISPLAYING FORM */
+
+#display-form {
+    position: fixed;
+    color: white;
+    bottom: 50px;
+    right: 0;
+    padding: 30px 50px;
+    cursor: pointer;
+    background-color: rgb(150, 106, 13);
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+#display-form:hover {
+    background-color: rgb(116, 83, 13);
+}
+
+#display-form:active {
+    background: linear-gradient(rgb(116, 83, 13), rgb(83, 60, 11));
+}
